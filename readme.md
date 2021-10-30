@@ -24,9 +24,5 @@ Configuration is accessible from [http://localhost:8080/.well-known/openid-confi
 Here is sample of retrieving OAuth token using client credentials flow:
 
 ```
-curl -X POST \
-  http://localhost:8080/oauth2/token \
-  -H 'cache-control: no-cache' \
-  -H 'content-type: application/x-www-form-urlencoded' \
-  -d 'grant_type=client_credentials&client_id=test-client-1&client_secret=secret-1'
+curl -X POST http://localhost:8080/oauth2/token -H "cache-control: no-cache" -H "content-type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=test-client-1&client_secret=secret-1"
 ```
